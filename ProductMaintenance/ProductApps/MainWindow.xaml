@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProductApps.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="472.404" Width="525">
     <Grid>
         <Label Content="Product:" HorizontalAlignment="Left" Height="30" Margin="46,37,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Price $:" HorizontalAlignment="Left" Height="30" Margin="46,78,0,0" VerticalAlignment="Top" Width="61"/>
@@ -12,6 +12,8 @@
         <TextBlock Name="totalPaymentAfterDlvTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBlock HorizontalAlignment="Left" Height="49" Margin="46,265,0,0" VerticalAlignment="Top" Width="125" TextWrapping="WrapWithOverflow" ><Run Text="Total Charge after adding the wrap charge "/><Run Text="($5)"/><Run Text=":"/></TextBlock>
         <TextBlock Name="totalPaymentAfterWrapTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Height="49" Margin="46,325,0,0" VerticalAlignment="Top" Width="125" TextWrapping="WrapWithOverflow" ><Run Text="Total Charge after adding the GST "/><Run Text="(@ 10%)"/><Run Text=":"/></TextBlock>
+        <TextBlock Name="totalPaymentAfterGSTTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
         <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
         <TextBox x:Name="quantityTextBox" HorizontalAlignment="Left" Height="24" Margin="122,119,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
