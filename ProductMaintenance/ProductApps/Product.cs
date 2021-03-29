@@ -9,11 +9,13 @@ namespace ProductApps
     class Product
     {
         private static decimal DEF_DLVCHARGE = 25;
+        private static decimal DEF_WRAPCHARGE = 5;
 
         private decimal price;
         private int quantity;
         private decimal totalPayment;
         private decimal totalPaymentIncDlv;
+        private decimal totalPaymentIncWrap;
         private decimal delivery;
         private decimal wrapping;
         private decimal gst;
@@ -61,6 +63,8 @@ namespace ProductApps
             set { totalPaymentIncDlv = value; }
         }
 
+        public decimal TotalPaymentIncWrap { get => totalPaymentIncWrap; set => totalPaymentIncWrap = value; }
+
         //Constructor for Product
         public Product(decimal price, int quantity)
         {
@@ -73,6 +77,7 @@ namespace ProductApps
         {
             TotalPayment = Price * Quantity;
             TotalPaymentIncDlv = totalPayment + DEF_DLVCHARGE;
+            TotalPaymentIncWrap = TotalPaymentIncDlv + DEF_WRAPCHARGE;
         }
 
         
